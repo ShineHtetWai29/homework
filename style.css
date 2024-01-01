@@ -1,0 +1,16 @@
+
+.btn{
+    display: flex;
+    gap: 4px 0px;
+    justify-content: space-around;   
+}
+#btn1,#btn2,#btn3{
+    width: 15em;
+    height: 5em;
+    background: none;
+}
+.btn a{
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
