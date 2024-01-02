@@ -11,6 +11,7 @@ $bgnav: #f55;
         padding: 1em;
     }
 }
+// start of navbar 
 .navbar {
     
     &__list {
@@ -43,6 +44,7 @@ $bgnav: #f55;
     }
     
 }
+// start of section1 card design with scss structure
 .container{
     max-width: 1200px;
     // display: flex;
@@ -74,6 +76,7 @@ $bgnav: #f55;
 
 
 }
+// start of section2 box design with inheritance
 @mixin box {
     background-color: #f55;
     border: 5px solid #f55;
@@ -86,7 +89,7 @@ $bgnav: #f55;
     max-width: 1200px;
     margin: auto;
 }
-
+//  start of responsive design 
 @media only screen and (min-width: 300px) and (max-width: 600px) {
     .card {
             &__body {
