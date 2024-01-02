@@ -29,38 +29,94 @@ $bgnav: #f55;
             padding: 1em;
             justify-content: center;
 
-
+            
             a{
                 text-decoration: none;
                 font-size: $txtsize;
             }
+            &--hover:hover{
+                border-bottom: 3px solid #000;
+            }
+            
         }
         
     }
     
 }
 .container{
-    // max-width: 1200px;
-    display: flex;
-    justify-content:center;
+    max-width: 1200px;
+    // display: flex;
+    // justify-content:center;
+    margin: auto;
 }
 .card {
     display: flex;
     flex-wrap: wrap;
+    
     &__body {
         width: calc(33.3% - 4px);
         margin: 2px;
         height: 400px;
         img{
             width: 100%;
-            height: 95%
+            height: 92%
+        }
+        &__link{
+            border: 2px solid #251;
+            margin: 2px;
+            text-align: center;
+
+            a{
+                text-decoration: none;
+            }
         }
     }
 
 
-}feauture/xxxx
-@mixin box1 {
-    // background-color: #f55;
+}
+@mixin box {
+    background-color: #f55;
     border: 5px solid #f55;
-    width: 100px;
+    width: 100%;
+}
+.box1,.box2,.box3{
+    @include box;
+}
+.container1{
+    max-width: 1200px;
+    margin: auto;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .card {
+            &__body {
+                width: calc(50% - 4px);
+
+        }
+    }
+
+    .container{
+        max-width: 100%;
+    }
+
+    .container1{
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .card {
+            &__body {
+                width: calc(100%);
+
+        }
+    }
+
+    .container{
+        max-width: 100%;
+    }
+
+    .container1{
+        max-width: 100%;
+    }
 }
