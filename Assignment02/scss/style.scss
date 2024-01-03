@@ -1,6 +1,11 @@
 $bglogo:#000;
 $txtsize: 1em;
 $bgnav: #f55;
+.header{
+    display: sticky;
+    top: 0;
+    z-index: 1;
+}
 .logo{
     background-color: $bglogo;
     height: 3em;
@@ -14,6 +19,8 @@ $bgnav: #f55;
 }
 // start of navbar 
 .navbar {
+   
+
     &__list {
         display: flex;
         justify-content: space-between;
@@ -23,7 +30,6 @@ $bgnav: #f55;
         padding: 0;
         margin: auto;
         width: 100%;
-        position: sticky;
 
         li{
             background-color: $bgnav;
