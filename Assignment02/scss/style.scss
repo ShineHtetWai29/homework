@@ -5,6 +5,7 @@ $bgnav: #f55;
     background-color: $bglogo;
     height: 3em;
     text-align: center;
+    position: sticky;
     &__txt{
         font-size:$txtsize ;
         color: #11f;
@@ -13,7 +14,6 @@ $bgnav: #f55;
 }
 // start of navbar 
 .navbar {
-    
     &__list {
         display: flex;
         justify-content: space-between;
@@ -21,23 +21,32 @@ $bgnav: #f55;
         height: 3em;
         text-align: center;
         padding: 0;
-        margin: 0;
+        margin: auto;
+        width: 100%;
+        position: sticky;
 
-        &__item {
+        li{
             background-color: $bgnav;
             width: 33%;
             margin: 2px;
-            padding: 1em;
+            padding-top:1em;
             justify-content: center;
-
             
             a{
                 text-decoration: none;
                 font-size: $txtsize;
+                width: 100%;
+                height: 100%;
+                display: block;
+                margin: 0;
             }
-            &--hover:hover{
+            a:hover{
                 border-bottom: 3px solid #000;
+                transition: all 1s  ;
+
             }
+            
+            
             
         }
         
@@ -58,33 +67,74 @@ $bgnav: #f55;
     &__body {
         width: calc(33.3% - 4px);
         margin: 2px;
-        height: 400px;
-        img{
-            width: 100%;
-            height: 92%
+        
+        &__img{
+            height: 400px;
+            transition: all 2s;
+            overflow: hidden;
+
+            a{
+                :hover{
+                    transform: scale(1.08);
+
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+
+                }
+            }
         }
+        
         &__link{
             border: 2px solid #251;
             margin: 2px;
             text-align: center;
+            transform: skewX(200deg);
+            box-shadow: 3px 1px #aa8800;
+            transition: all 1s linear;
+
 
             a{
                 text-decoration: none;
+                width: 100%;
+                display: block;
+                &:hover{
+                    background: #aa8800;
+                    color: #fff;
+                }
             }
+
         }
     }
 
 
 }
 // start of section2 box design with inheritance
-@mixin box {
-    background-color: #f55;
-    border: 5px solid #f55;
-    width: 100%;
+.box{
+    &__bloc {
+        background-color: #f55;
+        border: 5px solid #f55;
+        width: 100%;
+    
+        a{
+            text-decoration: none;
+            color: #000;
+            display: block;
+            width: 100%;
+        }
+        
+    }
+    &:hover{
+        p{
+            display: none;
+            transition: all 2s  ease;
+        }
+    }
+    
 }
-.box1,.box2,.box3{
-    @include box;
-}
+
+
 .container1{
     max-width: 1200px;
     margin: auto;
