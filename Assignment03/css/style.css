@@ -1,0 +1,7 @@
+.l-nav {
+  display: inline;
+}
+.l-nav__navbar {
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=style.css.map */
