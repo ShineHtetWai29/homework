@@ -1,0 +1,33 @@
+.c-btn{
+    width: 100%;
+    max-width: 130px;
+    margin: 0 4px;
+
+      a {
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        line-height: 28px;
+        display: block;
+        text-align: center;
+        width: 100%;
+        color:#fff;
+        border: 1px solid #8D8D8D;
+        border-radius: 25px;
+        padding: 11px 0;
+      }
+
+      &--singup{
+        margin-right: 20px;
+      }
+      // for discover button 
+      &--discover{
+        max-width: 205px;
+        margin: 0 auto;
+        a{
+          background-color: #E76F51;
+          border: 1px solid #E76F51;
+        }
+      }
+      
+}
