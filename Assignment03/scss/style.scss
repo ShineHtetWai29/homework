@@ -1,5 +1,10 @@
 @import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
 
 @import 'object/component/btn';
+@import 'object/component/card';
 @import 'object/project/mainvisual';
-@import 'foundation/reset'
+
+@import 'foundation/reset';
+@import 'foundation/font';
