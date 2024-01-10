@@ -21,6 +21,7 @@
   width: 100%;
 }
 .c-form .error {
+  display: none;
   color: #f00;
 }
 .c-form .success {
